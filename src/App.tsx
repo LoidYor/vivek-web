@@ -9,6 +9,7 @@ import PlannerPage from '@/pages/PlannerPage';
 import LinkedInPage from '@/pages/LinkedInPage';
 import LearningPage from '@/pages/LearningPage';
 import ProjectsPage from '@/pages/ProjectsPage';
+import AdminMaterialsPage from '@/pages/AdminMaterialsPage';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/linkedin" element={<LinkedInPage />} />
         <Route path="/learning" element={<LearningPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/admin/materials" element={<AdminMaterialsPage />} />
       </Routes>
     </Layout>
   );
