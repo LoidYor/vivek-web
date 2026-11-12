@@ -1,2 +1,5 @@
 [functions.materials]
 verify_jwt = false
+
+[functions.kb-analyze]
+verify_jwt = true
