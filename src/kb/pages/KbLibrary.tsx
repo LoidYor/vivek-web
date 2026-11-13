@@ -27,7 +27,7 @@ import { useKbAuth } from '@/kb/KbAuthContext';
 
 export default function KbLibrary() {
   const { session } = useKbAuth();
-  const [params] = useSearchParams();
+  const [params, setParams] = useSearchParams();
   const [projects, setProjects] = useState<KbProject[]>([]);
   const [projectId, setProjectId] = useState<string>(params.get('project') ?? '');
   const [docs, setDocs] = useState<KbDocument[]>([]);

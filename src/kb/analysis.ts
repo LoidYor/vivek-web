@@ -3,6 +3,7 @@ import type { FindingKind, FindingPayload } from './types';
 export interface RawFinding {
   kind: FindingKind;
   payload: FindingPayload;
+  documentId?: string;
 }
 
 export interface AnalysisResponse {

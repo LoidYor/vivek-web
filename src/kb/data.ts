@@ -311,3 +311,8 @@ export async function listReports(projectId: string): Promise<KbReport[]> {
   if (error) throw new Error(message(error, 'Reports load nahi hui'));
   return data ?? [];
 }
+
+export async function deleteReportRow(id: string): Promise<void> {
+  const { error } = await supabase.from('kb_reports').delete().eq('id', id);
+  if (error) throw new Error(message(error, 'Report delete nahi hui'));
+}
